@@ -5,24 +5,33 @@
 }
 
 h1 {
-  color: #426696;
+  color: #65dfc9;
   font-weight: 600;
   font-size: 3rem;
   opacity: 0.8;
 }
-h2,
-p {
-  color: #658ec6;
-  font-weight: 500;
-  opacity: 0.8;
-}
-
-h3 {
-  color: #426696;
+h2{
+  color: #65dfc9;
   font-weight: 600;
   opacity: 0.8;
 }
-
+h4 {
+  color: #65dfc9;
+  margin-left: 20px;
+  margin-right: auto;
+  margin-top: 20px;
+  font-weight: 600;
+  opacity: 0.8;
+}
+p {
+  color: #426696;
+  font-weight: 300;
+  opacity: 0.8;
+}
+#phrase-of-the-day {
+  font-size: 1rem;
+  opacity: 0.8;
+}
 main {
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
@@ -32,11 +41,12 @@ main {
   justify-content: center;
 }
 .glass {
-  background: white;
+  background: #141616;
   min-height: 80vh;
-  width: 60%;
+  width: 70%;
   background: linear-gradient(
     to right bottom,
+    #141616
     rgba(255, 255, 255, 0.7),
     rgba(255, 255, 255, 0.3)
   );
@@ -60,8 +70,8 @@ main {
 }
 
 .circle1 {
-  top: 5%;
-  right: 15%;
+  top: 8%;
+  right: 9%;
 }
 .circle2 {
   bottom: 5%;
@@ -102,7 +112,7 @@ img {
   background: linear-gradient(to right top, #65dfc9, #6cdbeb);
   border-radius: 2rem;
   color: white;
-  padding: 1rem;
+  padding: 2.5rem;
   position: relative;
 }
 
@@ -117,21 +127,11 @@ img {
   font-weight: 500;
 }
 
-/* GAMES */
-.status {
-  margin-bottom: 3rem;
-}
+#status {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
 
-.status input {
-  background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.3)
-  );
-  border: none;
-  width: 50%;
-  padding: 0.5rem;
-  border-radius: 2rem;
 }
 
 .profile {
@@ -149,7 +149,7 @@ img {
     rgba(255, 255, 255, 0.5)
   );
   border-radius: 1rem;
-  margin: 2rem 0rem;
+  margin: 1rem;
   padding: 2rem;
   box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
   justify-content: space-between;
