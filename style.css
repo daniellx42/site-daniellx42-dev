@@ -244,6 +244,9 @@ img {
   video {
     flex-direction: column;
   }
+  .dashboard {
+    min-height: 100vh;
+  }
 
   .glass {
     width: 100%;
