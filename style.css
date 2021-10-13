@@ -171,6 +171,9 @@ img {
   time, mark, audio, video {
     flex-direction: column;
   }
+  .dashboard {
+    min-height: 100vh;
+  }
   .glass {
     width: 100%;
   }
@@ -183,5 +186,5 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-
+  }
 }
