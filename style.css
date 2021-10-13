@@ -155,12 +155,6 @@ img {
   justify-content: space-between;
 }
 
-.card-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 @media (max-width: 768px) {
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -177,9 +171,17 @@ img {
   time, mark, audio, video {
     flex-direction: column;
   }
+  .glass {
+    width: 100%;
+  }
   .card {
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    display: block;
   }
+  .profile {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
 }
