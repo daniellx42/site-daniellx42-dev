@@ -60,7 +60,6 @@ main {
 
 .glass {
   background: #141616;
-  min-height: 80vh;
   width: 80%;
   background: linear-gradient(to right bottom,
       #141616 rgba(255, 255, 255, 0.7),
@@ -128,7 +127,7 @@ img {
 }
 
 .profile {
-  margin: 5rem;
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
