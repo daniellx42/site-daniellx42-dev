@@ -1,3 +1,4 @@
+// Button Scroll
 const btnScrollToTop = document.getElementById("btnScrollToTop");
 
 btnScrollToTop.addEventListener("click", () => {
@@ -8,12 +9,7 @@ btnScrollToTop.addEventListener("click", () => {
     })
 });
 
-
-
-
-
-
-
+// Pop-Up About
 const button = document.getElementById("bntPopUp")
 const popup = document.querySelector(".popup-wrapper")
 

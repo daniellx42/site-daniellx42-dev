@@ -18,20 +18,18 @@
     transform: translateY(-10px);
   }
 }
-
+/*----------------------------------------------------*/
 h1 {
   color: #65dfc9;
   font-weight: 600;
   font-size: 3rem;
   opacity: 0.8;
 }
-
 h2 {
   color: #65dfc9;
   font-weight: 600;
   opacity: 0.8;
 }
-
 h4 {
   color: #65dfc9;
   margin-left: 20px;
@@ -40,13 +38,12 @@ h4 {
   font-weight: 600;
   opacity: 0.8;
 }
-
 p {
   color: #426696;
   font-weight: 300;
   opacity: 0.8;
 }
-
+/*----------------------------------------------------*/
 #phrase-of-the-day {
   font-size: 1rem;
   opacity: 0.8;
@@ -64,7 +61,7 @@ main {
 .glass {
   background: #141616;
   min-height: 80vh;
-  width: 60%;
+  width: 80%;
   background: linear-gradient(to right bottom,
       #141616 rgba(255, 255, 255, 0.7),
       rgba(255, 255, 255, 0.3));
@@ -90,14 +87,13 @@ main {
 img {
   border-radius: 50px;
 }
-
+/*----------------------------------------------------*/
 .link {
   display: flex;
   margin: 2rem 0rem;
   padding: 1rem 5rem;
   align-items: center;
 }
-
 .link h2 {
   padding: 0rem 2rem;
 }
@@ -113,13 +109,11 @@ img {
   padding: 2.5rem;
   position: relative;
 }
-
 .pro img {
   position: absolute;
   top: 15%;
   right: 10%;
 }
-
 .pro h2 {
   width: 50%;
   color: white;
@@ -143,7 +137,8 @@ img {
 #btnScrollToTop {
   display: none;
 }
-
+/*----------------------------------------------------*/
+/*Button Pop-Up About*/
 #bntPopUp {
   display: block;
   margin: 20px auto;
@@ -190,8 +185,12 @@ img {
   top: 5px;
   right: 10px;
   cursor: pointer;
+  color: black;
+  background: #65dfc9;
+  padding: 5px 10px;
+  border-radius: 0.5rem;
 }
-
+/*----------------------------------------------------*/
 .card {
   display: flex;
   background: linear-gradient(to left top,
@@ -204,6 +203,14 @@ img {
   justify-content: space-between;
 }
 
+#iframe-youtube {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+}
+
+/*----------------------------------------------------*/
 @media (max-width: 768px) {
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,
 acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,
@@ -232,6 +239,7 @@ header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
     margin-right: auto;
     width: 100%;
   }
+/*----------------------------------------------------*/
   #btnScrollToTop {
     display: inline;
     position: fixed;
@@ -249,7 +257,7 @@ header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
   #btnScrollToTop:active {
     background: repeating-linear-gradient(45deg, black, transparent 100px);
   }
-
+/*----------------------------------------------------*/
   .popup {
     font-family: "Poppins", sans-serif;
     text-align: center;
