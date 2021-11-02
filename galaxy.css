@@ -357,3 +357,26 @@ header {
   background: #000;
   height: 100%;
 }
+
+
+@media (max-width: 1010px) {
+  .galaxy-header {
+    display: none;
+  }
+  .galaxy {
+    display: none;
+  }
+  .stars {
+    display: none;
+  }
+  .stars:before {
+    display: none;
+  }
+  .stars:after {
+    display: none;
+  }
+  .stars:before,
+.stars:after {
+  display: none;
+}
+}
