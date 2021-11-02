@@ -11,11 +11,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="galaxy.css">
 </head>
 
 <body>
     <main>
-        <section class="glass">
+        <div class="galaxy">
+            <div class="stars"></div>
+        </div>
+        <section class="glass moving-glow">
             <div class="dashboard">
                 <div class="user">
                     <img src="./images/avatar.png" width="135" alt="Daniellx42" />
@@ -44,7 +48,12 @@
                             <h2>Linkedin</h2>
                         </a>
                     </div>
-                    <button id="bntPopUp">About</button>
+                    <button id="btnPopUp">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        About</button>
                     <!-- <div class="link">
                         <img src="" width="40" alt="" />
                         <h2>Library</h2>
