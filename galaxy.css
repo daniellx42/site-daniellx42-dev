@@ -359,7 +359,7 @@ header {
 }
 
 
-@media (max-width: 1010px) {
+@media (max-width: 1000px) {
   .galaxy-header {
     display: none;
   }
