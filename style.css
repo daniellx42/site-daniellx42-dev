@@ -261,8 +261,8 @@ img {
   font-family: "Poppins", sans-serif;
   text-align: center;
   width: 85%;
-  height: 55%;
-  min-width: 400px;
+  height: 70%;
+  min-width: 320px;
   margin: 15% auto;
   padding: 5px;
   background: rgb(34, 34, 34);
@@ -305,9 +305,9 @@ img {
 .icons:hover {
   transform: scale(1.5);
 }
-
-
-
+.icons {
+text-align: center;
+}
 /*----------------------------------------------------*/
 /* #iframe-youtube {
   display: flex;
@@ -381,8 +381,8 @@ header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
   .popup {
     font-family: "Poppins", sans-serif;
     text-align: center;
-    width: 80%;
-    height: 60%;
+    width: 90%;
+    height: 50%;
     margin: 5% auto;
     padding: 5px;
     background: rgb(34, 34, 34);
