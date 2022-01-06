@@ -308,6 +308,10 @@ img {
 .icons {
 text-align: center;
 }
+.cards2 .icons {
+  text-align: left;
+}
+
 /*----------------------------------------------------*/
 /* #iframe-youtube {
   display: flex;
