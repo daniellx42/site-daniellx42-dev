@@ -112,6 +112,8 @@ main {
 /*----------------------------------------------------*/
 img {
   border-radius: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 /*----------------------------------------------------*/
 .link {
@@ -305,7 +307,12 @@ img {
 .icons:hover {
   transform: scale(1.5);
 }
-
+.card h2{
+  font-size: 1rem;
+  font-weight: 500;
+  color: #255784;
+  text-align: center;
+}
 
 
 /*----------------------------------------------------*/
