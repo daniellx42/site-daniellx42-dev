@@ -312,6 +312,14 @@ text-align: center;
   text-align: left;
 }
 
+.btn-download {
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+}
+.center-items-popup {
+  margin-top: 20%;
+}
 
 /*----------------------------------------------------*/
 /* #iframe-youtube {
