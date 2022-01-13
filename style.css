@@ -308,6 +308,9 @@ img {
 .icons {
 text-align: center;
 }
+.cards h4 {
+  text-align: left;
+}
 
 
 /*----------------------------------------------------*/
