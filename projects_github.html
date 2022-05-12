@@ -2,56 +2,23 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>projects github</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
 </head>
 
-<body>
+
+<body onload="navBar(), getApiGithHubRepos()">
     <div class="navbar">
-        <ul>
-            <img src="images/avatar.png">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects_github.html">Projects GitHub</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div class="avatar-git"></div>
     </div>
-
     <div>
-        <h1>Projects GitHub</h1>
-        <div class="api-github">
-        </div>
+        <div class="api-github"></div>
     </div>
-    <script>
-        const api_github = document.querySelector('.api-github');
-
-        function getApiGithHub() {
-            fetch('https://api.github.com/users/daniellx42/repos')
-                .then(async res => {
-                    if (!res.ok) {
-                        throw Error(res.status);
-                    }
-                    let data = await res.json();
-                    data.map(item => {
-                        api_github.insertAdjacentHTML('beforeend', `
-            <div id="api-github">
-              <a href=${item.html_url}>
-                <div>
-                  <p>${item.name}</p>
-                </div>
-              </a>
-            </div>
-          `);
-                    });
-                }).catch(err => {
-                    console.log(err);
-                });
-        }
-        getApiGithHub();
-    </script>
 </body>
 
 </html>

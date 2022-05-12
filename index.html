@@ -8,22 +8,20 @@
   <title>daniellx42</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+  <script src="db_network_social.js"></script>
 </head>
 
-<body>
-  <div class="navbar">
-    <ul>
-      <img src="images/avatar.png">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="projects_github.html">Projects GitHub</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-  <div class="oldversion">
-    <p>site old version 1.0</p>
-    <img src="images/gif-site-1.0.gif" alt="">
-    <hr>
-    <p>site 2.0 in development</p>
+<body onload="navBar(), network_social()">
+
+  <div class="navbar"></div>
+  <div class="index-container">
+    <div class="network-social"></div>
+    <div class="oldversion">
+      <hr>
+      <p id="p-index">site old version 1.0</p>
+      <img src="images/gif-site-1.0.gif" alt="">
+    </div>
   </div>
 
 </body>
