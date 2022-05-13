@@ -17,6 +17,12 @@ const db_network_social = [
     image: "./images/instagram.svg",
     url: "https://www.instagram.com/daniellx42_/",
   },
+  {
+    id: 4,
+    name: "discord",
+    image: "./images/discord.svg",
+    url: "https://discord.gg/x7aTDqrNb9",
+  },
 ];
 
 const network_social = () => {
@@ -25,10 +31,11 @@ const network_social = () => {
     network_social.innerHTML += `
         <div class="card">
           <div class="network-content">
-            <a href="${item.url}" target="_blank"</a>
-          </div>
-          <div class="network-image">
-              <img src="${item.image}">
+            <a href="${item.url}" target="_blank">
+              <div class="network-image">
+               <img src="${item.image}">
+              </div>
+            </a>
           </div>
         </div>
         `;

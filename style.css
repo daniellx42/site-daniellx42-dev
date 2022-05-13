@@ -1,161 +1,201 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Mono:ital,wght@0,400;1,700&display=swap");
+
+:root {
+  --fonts: "Roboto Mono", monospace;
+  --fonts-sans: "Open Sans", sans-serif;
+  --fonts-serif: "Roboto Mono", monospace;
+  --color-background-navbar: #18191a;
+  --color-background: #16384c;
+  --color-text: #fff;
+}
 
 /* ----- index ------------------------------------------- */
-#p-index {
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  margin-top: 140px;
-}
 .index-container {
-  background: #16384c;
-}
-.network-social {
+  background: var(--color-background);
+  margin-left: 300px;
+  height: 100vh;
   display: flex;
   justify-content: center;
-  background: #16384c;
-  position: relative;
-  margin-left: 300px;
+  align-items: center;
+}
+
+.index-container .card {
+  position: absolute;
+  padding: 100px;
+  width: 400px;
+  height: 200px;
+  border-radius: 4px;
+  background: var(--color-background);
+  box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5);
+}
+
+.index-container .card h1 {
+  font-family: var(--fonts);
+  color: var(--color-text);
+  font-size: 40px;
+}
+
+.network-social {
+  justify-content: center;
+  /* background: var(--color-background); */
+  position: absolute;
+  margin-left: 250px;
+  margin-top: 5px;
+  border-radius: 4px;
   flex-wrap: wrap;
 }
+
 .network-social .card {
-  width: 300px;
-  height: 300px;
-  border-radius: 10px;
-  background: #16384c;
-  margin: 30px 10px;
+  background: var(--color-background);
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  margin: 5px 5px;
   display: flex;
   flex-direction: column;
   box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5);
   transition: 0.3s ease-in-out;
 }
+
 .network-social .card:hover {
   transform: translateX(10px);
 }
+
+.network-social .card .network-image img {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
 /* ----- navbar ------------------------------------------- */
 .navbar {
   list-style-type: none;
   margin: 0;
   padding: 0;
   width: 300px;
-  background-color: #18191a;
+  background: var(--color-background-navbar);
   position: fixed;
   height: 100%;
-  overflow: auto;
 }
+
 .navbar .avatar {
+  background: var(--color-background);
   margin-left: 25%;
   margin-right: 25%;
   width: 165px;
   height: 165px;
   margin-top: 0.5rem;
   border-radius: 50%;
-  background: #16384c;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .navbar .avatar img {
   border-radius: 50%;
   width: 150px;
   display: flex;
 }
+
 .navbar a {
   display: block;
-  color: white;
+  color: var(--color-text);
   padding: 20px 20px;
   text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--fonts);
 }
+
 .navbar a:hover:not(.active) {
-  background: #16384c;
+  background: var(--color-background);
 }
+
 .navbar p {
-  color: white;
+  color: var(--color-text);
   text-align: center;
   margin-left: 15px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--fonts);
 }
+
 #p-bio {
-  color: white;
+  color: var(--color-text);
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
   border-radius: 10px;
-  background-color: #242526;
+  background: #242526;
   padding: 30px;
   margin-top: 10px;
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 20px;
+  font-family: var(--fonts);
 }
+
 /* ----- api github ------------------------------------------- */
 .api-github {
   display: flex;
   justify-content: center;
-  background: #16384c;
-
+  background: var(--color-background);
   position: relative;
   margin-left: 300px;
   flex-wrap: wrap;
 }
+
 .api-github .card {
   width: 300px;
   height: 300px;
   border-radius: 10px;
-  background: #16384c;
+  background: var(--color-background);
   margin: 30px 10px;
   display: flex;
   flex-direction: column;
   box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5);
   transition: 0.3s ease-in-out;
 }
+
 .api-github .card:hover {
   transform: translateX(10px);
 }
+
 .api-github .card img {
   width: 50px;
   margin-left: 25px;
   margin: 10px;
 }
+
 .api-github .card a {
-  color: white;
-  font-family: 'Open Sans', sans-serif;
+  color: var(--color-text);
   align-items: center;
   justify-content: center;
   text-decoration: none;
   display: flex;
-  padding: 20px;
-  padding-top: 141px;
-  padding-bottom: 141px;
+  padding: 10px;
+  padding-top: 140px;
+  font-family: var(--fonts);
+  font-size: 20px;
 }
-/* ----- index ------------------------------------------- */
-.oldversion img {
-  width: 600px;
-  height: 400px;
-  border-radius: 10px;
-  margin-left: 350px;
-  display: block;
-}
-.oldversion p {
+
+.api-github .card footer {
   text-align: center;
-  margin-left: 350px;
-  margin-top: 20px;
-  display: inline-flex;
+  margin-top: 110px;
+  font-size: 15px;
 }
+
 /* ----- skills ------------------------------------------- */
 .card-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #16384c;
+  background: var(--color-background);
   position: relative;
   margin-left: 300px;
   flex-wrap: wrap;
   padding: 30px;
 }
+
 .card-container .card {
   height: 215px;
   border-radius: 10px;
-  background: #16384c;
+  background: var(--color-background);
   margin: 30px 10px;
   padding: 20px 15px;
   display: flex;
@@ -163,9 +203,11 @@
   box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5);
   transition: 0.3s ease-in-out;
 }
+
 .card-container .card:hover {
   height: 320px;
 }
+
 .card-container .card-image {
   position: relative;
   width: 200px;
@@ -173,10 +215,12 @@
   top: -60px;
   z-index: 1;
 }
+
 .card-container .card .card-image img {
   max-width: 100%;
   border-radius: 4px;
 }
+
 .card-container .card .card-content {
   position: relative;
   margin-top: -140px;
@@ -187,22 +231,28 @@
   opacity: 0;
   transition: 0.3s ease-in-out;
 }
+
 .card-container .card:hover .card-content {
   visibility: visible;
   opacity: 1;
   margin-top: -40px;
   transition-delay: 0.3s;
 }
+
 .card-container .card .card-content h3 {
   font-size: 1.2em;
-  font-family: 'Open Sans', sans-serif;
-  margin-bottom: 5px;
-  color: white;
-}
-.card-container .card .card-content p {
-  font-size: 0.8em;
-  font-family: 'Open Sans', sans-serif;
-  color: white;
+  margin-bottom: 10px;
+  color: var(--color-text);
+  font-family: var(--fonts);
 }
 
-@media (max-width: 1000px) {}
+.card-container .card .card-content p {
+  font-size: 0.8em;
+  color: var(--color-text);
+  font-family: var(--fonts);
+  max-width: 200px;
+}
+
+@media (min-width: 1000px) {
+  /* developing */
+}
