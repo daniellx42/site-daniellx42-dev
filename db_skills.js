@@ -97,7 +97,7 @@ const db_skills = [
   },
   {
     id: 17,
-    name: "Visual Studio Code Insiders",
+    name: "VS Code Insiders",
     text: "1 year 6 month of experience.",
     image: "./images/vscode.svg",
   },

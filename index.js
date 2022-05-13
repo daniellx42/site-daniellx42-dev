@@ -37,18 +37,16 @@ const getApiGithHubRepos = () => {
       }
       let data = await res.json();
       return data.map((item) => {
-        api_github_Repos.insertAdjacentHTML(
-          "beforeend",
-          `
+        api_github_Repos.innerHTML += `
     <div class="card">
       <a href="${item.html_url}" target="_blank">
         <div>
           <p>${item.name}</p>
+          <footer>${item.fork ? "forked" : "created"}</footer>
         </div>
       </a>
     </div>
-  `
-        );
+  `;
       });
     })
     .catch((err) => {
