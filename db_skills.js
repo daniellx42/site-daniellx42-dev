@@ -138,17 +138,15 @@ const skills = () => {
   return db_skills.map((item) => {
     console.log(item);
     class_skills.innerHTML += `
-            <div class="card-content">
-              <div class="card">
+            <div class="card">
               <div class="card-image">
                   <img src="${item.image}">
               </div>
-              <div class="card-content">
+              <div class="card-text">
                   <h3>${item.name}</h3>
                   <p>${item.text}</p>
               </div>
-          </div>
-          </div>
+            </div>
             `;
   });
 };

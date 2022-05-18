@@ -3,11 +3,10 @@ const navBar = () => {
   fetch("https://api.github.com/users/daniellx42")
     .then(async (res) => {
       if (!res.ok) {
-        throw Error(res.status);
+        throw new Error(res.statusText);
       }
       let data = await res.json();
       return (nav.innerHTML += `
-      <div class="navbar">
         <div class="avatar">
           <img src="${data.avatar_url}"/>
         </div>
@@ -20,7 +19,6 @@ const navBar = () => {
               </li>
               <li><a href="skills.html">Skills</a></li>
           </ul>
-      </div>
     `);
     })
     .catch((err) => {
@@ -33,7 +31,7 @@ const getApiGithHubRepos = () => {
   fetch("https://api.github.com/users/daniellx42/repos")
     .then(async (res) => {
       if (!res.ok) {
-        throw Error(res.status);
+        throw Error(res.statusText);
       }
       let data = await res.json();
       return data.map((item) => {
