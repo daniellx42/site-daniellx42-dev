@@ -113,6 +113,7 @@
 .navbar p {
   color: var(--color-text);
   text-align: center;
+  margin-top: 4px;
   margin-left: 15px;
   font-family: var(--fonts);
 }
@@ -154,12 +155,6 @@
 
 .api-github .card:hover {
   transform: translateX(10px);
-}
-
-.api-github .card img {
-  width: 50px;
-  margin-left: 25px;
-  margin: 10px;
 }
 
 .api-github .card a {
@@ -221,7 +216,7 @@
   border-radius: 4px;
 }
 
-.card-container .card .card-content {
+.card-container .card .card-text {
   position: relative;
   margin-top: -140px;
   padding: 10px 15px;
@@ -232,21 +227,21 @@
   transition: 0.3s ease-in-out;
 }
 
-.card-container .card:hover .card-content {
+.card-container .card:hover .card-text {
   visibility: visible;
   opacity: 1;
   margin-top: -40px;
   transition-delay: 0.3s;
 }
 
-.card-container .card .card-content h3 {
+.card-container .card .card-text h3 {
   font-size: 1.2em;
   margin-bottom: 10px;
   color: var(--color-text);
   font-family: var(--fonts);
 }
 
-.card-container .card .card-content p {
+.card-container .card .card-text p {
   font-size: 0.8em;
   color: var(--color-text);
   font-family: var(--fonts);
