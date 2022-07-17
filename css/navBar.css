@@ -1,0 +1,93 @@
+/* ----- navbar ------------------------------------------- */
+.navbar {
+  list-style-type: none;
+}
+
+.navbar .avatar {
+  background: var(--color-background);
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 165px;
+  height: 165px;
+  margin-top: 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar .avatar img {
+  border-radius: 50%;
+  width: 150px;
+  display: flex;
+}
+
+.navbar a {
+  display: block;
+  color: var(--color-text);
+  padding: 20px 20px;
+  text-decoration: none;
+  font-family: var(--fonts-roboto);
+}
+
+.navbar a:hover:not(.active) {
+  background: var(--color-background);
+}
+
+.navbar p {
+  color: var(--color-text);
+  text-align: center;
+  margin-top: 4px;
+  margin-left: 15px;
+  font-family: var(--fonts-roboto);
+}
+
+#p-bio {
+  color: var(--color-text);
+  text-align: center;
+  border-radius: 10px;
+  background: #242526;
+  padding: 30px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  font-family: var(--fonts-roboto);
+}
+/* ----- network ------------------------------------------- */
+
+.network-social {
+  justify-content: center;
+  /* background: var(--color-background); */
+  position: absolute;
+  margin-left: 250px;
+  margin-top: 5px;
+  border-radius: 4px;
+  flex-wrap: wrap;
+}
+
+.card-network {
+  background: var(--color-background);
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  margin: 5px 5px;
+  box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+.card-network:hover {
+  transform: translateX(10px);
+}
+
+.network-social .card-network .network-image img {
+  width: 30px;
+  height: 30px;
+  margin-left: -15px;
+  margin-top: -15px;
+}
+.network-content a {
+  width: 2px;
+  height: 2px;
+  border-radius: 4px;
+}

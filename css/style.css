@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Mono:ital,wght@0,400;1,700&display=swap");
+
+:root {
+  --fonts-sans: "Open Sans", sans-serif;
+  --fonts-roboto: "Roboto Mono", monospace;
+  --color-background-navbar: #18191a;
+  --color-background: #16384c;
+  --color-text: #fff;
+}
+
+/* ----- index ------------------------------------------- */
+.container {
+  display: grid;
+  grid-template-columns: 300px auto;
+  grid-template-rows: 100vh;
+}
+
+.scroll-card {
+  background: var(--color-background);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+/* ----- home ------------------------------------------- */
+.card-home {
+  width: 90%;
+  height: 60%;
+  margin-top: 20px;
+  flex-direction: column;
+  border-radius: 2px;
+  font-family: var(--fonts-roboto);
+  background-color: #18191a;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+h1 {
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+p {
+  margin-bottom: 20px;
+}
+.t1 img {
+  width: 150px;
+  height: 300px;
+  transition: transform 0.25s ease;
+  cursor: zoom-in;
+}
+.t1 img:active {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+  cursor: zoom-out;
+  margin-top: 100px;
+}
+@media (min-width: 1000px) {
+  /* developing */
+}

@@ -29,7 +29,7 @@ const network_social = () => {
   const network_social = document.querySelector(".network-social");
   db_network_social.map((item) => {
     network_social.innerHTML += `
-        <div class="card">
+        <div class="card-network">
           <div class="network-content">
             <a href="${item.url}" target="_blank">
               <div class="network-image">

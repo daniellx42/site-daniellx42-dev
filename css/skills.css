@@ -1,0 +1,66 @@
+/* ----- skills ------------------------------------------- */
+.container-skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.card-skills {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  background: var(--color-background);
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+.card-skills:hover {
+  height: 300px;
+}
+.image-skills {
+  margin-top: -50px;
+}
+.image-skills img {
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+}
+
+.text-skills {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.card-skills:hover .text-skills {
+  font-family: var(--fonts-roboto);
+  visibility: visible;
+  opacity: 1;
+  margin-top: 40px;
+  transition-delay: 0.3s;
+}
+
+.text-skills h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: var(--color-text);
+  font-family: var(--fonts);
+}
+
+.text-skills p {
+  font-size: 0.8em;
+  color: var(--color-text);
+  font-family: var(--fonts);
+  max-width: 200px;
+}

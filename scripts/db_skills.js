@@ -134,15 +134,15 @@ const db_skills = [
 ];
 
 const skills = () => {
-  const class_skills = document.querySelector(".card-container");
+  const class_skills = document.querySelector(".container-skills");
   return db_skills.map((item) => {
     console.log(item);
     class_skills.innerHTML += `
-            <div class="card">
-              <div class="card-image">
+            <div class="card-skills">
+              <div class="image-skills">
                   <img src="${item.image}">
               </div>
-              <div class="card-text">
+              <div class="text-skills">
                   <h3>${item.name}</h3>
                   <p>${item.text}</p>
               </div>
